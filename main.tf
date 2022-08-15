@@ -81,7 +81,7 @@ resource "azurerm_network_security_rule" "http_access" {
   protocol                    = "Tcp"
   source_port_range           = "*"
   destination_port_range      = "443"
-  source_address_prefix       = "85.31.253.3/32"
+  source_address_prefix       = "*"
   destination_address_prefix  = "*"
   resource_group_name         = azurerm_resource_group.jenkins_rg.name
   network_security_group_name = azurerm_network_security_group.jenkins_sg.name
