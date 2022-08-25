@@ -1,0 +1,5 @@
+terraform.tfstate
+.terraform
+.terraform.lock.hcl
+terraform.tfstate.backup
+remote-state/output.txt
